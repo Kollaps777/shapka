@@ -2,46 +2,141 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>КанцПарк</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КанцПарк</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="wrapper">
+		<div class="wrapper">
 
-            <div class="header__wrapper">
-                <div class="header__location">
-                    <a href="/" class="header__location__link">
-                        <img src="/img/svg/Frame 8.svg" alt="header__location__link">
-                        <a href="/" class="header__link location">Махачкала</a>
-                    </a>
-                </div>
+			<div class="header__top">
 
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a href="/" class="header__link">Магазины</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="/" class="header__link">Покупателям</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="/" class="header__link">Юридическим лицам</a>
-                        </li>
-                    </ul>
-                </nav>
+				<div class="header__location">
+					<a href="/" class="headerlocationlink">
+						<img src="/img/svg/Frame 8.svg" alt="Локация">
+						<span class="header__link location">Махачкала</span>
+					</a>
+				</div>
 
-                <div class="contacts">
-                    <a href="/" class="header__link contacts">8-800-999-99-99 (c 03:00 до 22:00)</a>
-                </div>
-            </div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="/" class="header__link">Магазины</a>
+						</li>
+						<li class="header__item">
+							<a href="/" class="header__link">
+								Покупателям
+								<img src="/img/svg/chevron-down.svg" alt="иконка">
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="/" class="header__link">
+								Юридическим лицам
+								<img src="/img/svg/chevron-down.svg" alt="иконка">
+							</a>
+						</li>
+					</ul>
+				</nav>
 
-        </div>
-    </header>
+				<div class="contacts">
+					<a href="/" class="header__link contacts">8-800-999-99-99 (c 03:00 до 22:00)</a>
+				</div>
+
+			</div>
+
+			<div class="header__main">
+				<div class="logo">
+					<img src="img/svg/Vector.svg" alt="logo" class="logo_img">
+				</div>
+
+				<form class="search-form" role="search">
+				<input type="search" id="search" class="search-input" placeholder="Быстрый поиск">
+				<button type="submit" class="search-button">
+					<img src="img/svg/Vector 2.svg" alt="Найти" class="search-icon__circle">
+					<img src="img/svg/Vector-1.svg" alt="Найти" class="search-icon__stick">
+				</button>
+				</form>
+
+				<nav class="for__user">
+					<ul class="user-actions">
+						<li class="user-actions__item">
+							<a href="/favorites" class="user-actions__link">
+								<img src="/img/svg/lover 1.svg" alt="Избранное">
+								<span class="visually-hidden">Избранное</span>
+							</a>
+						</li>
+						<li class="user-actions__item">
+							<a href="/compare" class="user-actions__link">
+								<img src="/img/svg/Group.svg" alt="Сравнить">
+								<span class="visually-hidden">Сравнить</span>
+							</a>
+						</li>
+						<li class="user-actions__item">
+							<a href="/cart" class="user-actions__link">
+								<img src="/img/svg/shopping-cart 1.svg" alt="Корзина">
+								<span class="visually-hidden">Корзина</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header__catalog">
+				<nav class="catalog-nav">
+					<ul class="catalog-list">
+						<li class="catalog-item">
+							<a href="/catalog" class="catalog-link catalog-link--active">
+								<img src="/img/svg/Group 201.svg" alt="catalog" class="catalog-icon">
+								Каталог
+							</a>
+						</li>
+						<li class="catalog-item">
+							<a href="/paper" class="catalog-link">
+								<img src="/img/svg/paper.svg" alt="paper product" class="catalog-icon">
+								Бумажная продукция
+							</a>
+						</li>
+						<li class="catalog-item">
+							<a href="/school" class="catalog-link">
+								<img src="/img/svg/for_school.svg" alt="for school" class="catalog-icon">
+								Товары для школы
+							</a>
+						</li>
+						<li class="catalog-item">
+							<a href="/creative" class="catalog-link">
+								<img src="/img/svg/for_creativity.svg" alt="for creativity" class="catalog-icon">
+								Товары для творчества
+							</a>
+						</li>
+						<li class="catalog-item">
+							<a href="/trade" class="catalog-link">
+								<img src="/img/svg/for_trading.svg" alt="for trading" class="catalog-icon">
+								Товары для торговли
+							</a>
+						</li>
+						<li class="catalog-item">
+							<a href="/sales" class="catalog-link">
+								<img src="/img/svg/salary.svg" alt="salary" class="catalog-icon">
+								Скидки и акции
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>	
+
+		</div>
+	</header>
+
+	<main>
+		<div class="test__container">
+			<img src="img/svg/Lite.svg" alt="Lite" class="lite_logo">
+			<span class="slogan">НИЧЕГО ЛИШНЕГО</span>
+			<p class="slogan_2">ТОЛЬКО ЛУЧШЕЕ ДЛЯ ВАШЕГО ОФИСА</p>
+		</div>
+	</main>
 </body>
-
 </html>
